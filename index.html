@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles\styles.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <form action=""></form>
+    <main class="container">
+        <h1>Contact Us</h1>
+        <p>Any querry? Drop a message.</p>
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="row">
+                <div class="col">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name"/>
+                </div>
+                <div class="col">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter Email Address"
+                      name="email"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter Subject"/>
+                </div>
+                <div class="col">
+                    <label for="mobile">Contact Number</label>
+                    <input type="tel" id="mobile" placeholder="Enter Mobile Number"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="message">Your message</label>
+                    <textarea id="message" placeholder="Enter Your Querry/Message" rows="3"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Submit" class="btn-submit">
+        </form>
+    </main>
 </body>
 </html>
